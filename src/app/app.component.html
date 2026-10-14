@@ -1,5 +1,5 @@
 <div class="cabecera">
-  <div>
+  <div class="estado">
     @if (this.enchufada) {
       <span>Estado conexión eléctrica: ENCHUFADA</span>
     } @else {
@@ -9,7 +9,7 @@
   <div>
     <span>{{ "Último estado recibido: " + this.estadoLampara }}</span>
   </div>
-  <div>
+  <div class="boton">
     @if (this.enchufada) {
       <button (click)="onDesenchufar()">DESENCHUFAR</button>
     } @else {
